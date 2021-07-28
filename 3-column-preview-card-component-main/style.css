@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
+*{ 
+    background-color: hsl(0, 0%, 95%);
+    background-size: cover;
+    
+    
 body{
     padding:0;
     margin:0;
@@ -13,8 +18,8 @@ body{
     padding:7% 20% 10% 20%;
     display: grid;
     grid-template-columns: repeat(3,1fr);   
-    background-color: hsl(0, 0%, 95%);
-    background-size: 100%;
+/*     background-color: hsl(0, 0%, 95%);
+    background-size: 100%; */
     
 }
 .sedans, .suvs, .luxury{
