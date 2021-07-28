@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
-    
+ *{
+     background-color:red;
+}
     
 body{
     padding:0;
