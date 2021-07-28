@@ -8,7 +8,7 @@ body{
     overflow: hidden;  
     border: black;
       background-color: hsl(0, 0%, 95%);
-    background-size: 100%;
+    background-size: 120%;
     
 }
 .wrapper{
