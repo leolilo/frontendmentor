@@ -12,7 +12,7 @@
 body{
     font-family: 'Karla';
     background-color: var(--grey-light);
-    padding: 1% 0 0 20%;
+    padding: 3% 0 0 20%;
 }
 .wrapper{
     display: grid;
