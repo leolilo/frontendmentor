@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root{
+--cyan: hsl(179, 62%, 43%);
+--cyan-light: hsl(179, 62%, 43%, 0.6);
+--yellow: hsl(71, 73%, 54%);
+--grey: hsl(204, 43%, 93%);
+--grey-light:hsl(204, 43%, 93%, 0.6);
+--grey-blue:hsl(218, 22%, 67%);
+}
+
+body{
+    font-family: 'Karla';
+    background-color: var(--grey-light);
+    padding: 1% 0 0 20%;
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    width: 70%;
+    background-color: white;
+}
+.banner{
+    padding:5%;
+}
+
+.nested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col1{
+    background-color: var(--cyan);
+    color: var(--grey);
+    padding: 5% 2% 15% 8%;
+}
+
+.col2{
+    background-color: var(--cyan-light);
+    color: var(--grey);
+    padding: 5% 2% 15% 8%; 
+}
+h1{
+    color: var(--cyan);
+    font-weight: 900;
+}
+h2{
+    color: var(--yellow);
+}
+.banner-text{
+    color: var(--grey-blue);
+    font-weight: 400;
+}
+#price{
+    font-size: 2rem;
+}
+#month{
+    color: var(--grey-light);
+}
+button{
+    border: none;
+    background-color: var(--yellow);
+    color: var(--grey);
+    font-family: inherit;
+    font-size: 1rem;
+    width: 70%;
+    height: 25%;
+    border-radius: 3px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    line-height: 26px;
+}
+
+
+@media screen and (max-width: 500px) {
+    body{
+        padding: 1% 0 0 1%;
+    }
+    .wrapper{
+        padding:0;
+        width: 100%; 
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    .banner{
+        padding-bottom: 10px;
+       
+    }
+    .nested{
+        display: inline-block;
+    }
+    button{
+        height: 40px;
+    }
+}
