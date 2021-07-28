@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    overflow: hidden;  
+    border: black;
+    
+}
+.wrapper{
+    
+    padding:7% 20% 10% 20%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    background-color: hsl(0, 0%, 95%);
+    
+}
+.sedans, .suvs, .luxury{
+    padding:15%;
+    
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+
+}
+.icon, .h1, .p{
+    padding-bottom: 10%;
+}
+p{
+    padding-bottom: 30%;
+    font-family: 'Lexend Deca';
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    font-family: 'Big Shoulders Display';
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1, button{
+    color:hsl(0, 0%, 95%);
+}
+#button-sedans, #button-suvs, #button-luxury{   font-family: 'Lexend Deca';
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#button-sedans{
+    color:hsl(31, 77%, 52%);
+}
+#button-suvs{
+    color:hsl(184, 100%, 22%);
+}
+#button-luxury{
+    color:hsl(179, 100%, 13%);
+}
+#button-sedans:hover,#button-sedans:active{
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    border: 2px hsl(0, 0%, 95%) solid;
+} 
+#button-suvs:hover, #button-suvs:active{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    border: 2px hsl(0, 0%, 95%) solid;
+}
+#button-luxury:hover, #button-luxury:active { background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border: 2px hsl(0, 0%, 95%) solid;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        overflow: scroll;
+    }
+    .wrapper{
+        display: inline-block;
+
+
+    }
+}
