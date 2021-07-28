@@ -65,6 +65,7 @@ button{
     width: 70%;
     height: 25%;
     border-radius: 3px;
+    cursor: pointer;
 }
 ul{
     list-style: none;
