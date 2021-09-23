@@ -1,0 +1,136 @@
+:root{
+    --softred: hsl(0, 36%, 70%);
+    --red: hsl(0, 93%, 68%);
+    --darkred: hsl(0, 6%, 24%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3.5rem;
+    letter-spacing: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--darkred);
+}
+h1 span{
+    font-weight: 300;
+    color: var(--softred);
+}
+p{
+    color: var(--softred);
+    letter-spacing: 1.15px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: center;
+
+}
+/* layout */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    max-height: 140vh;
+    background-color: hsla(0, 36%, 70%, 0.2);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+   padding: 1.5em;
+}
+
+picture{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+}
+source{
+   justify-content: center;
+}
+.content-body{
+    padding: 0 1em;
+}
+
+/* button */
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{ 
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    background-color: inherit;
+}
+button{
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(to right,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width: 50px;
+    margin-left: -50px;
+}
+
+@media (min-width:700px) {
+    body{
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+
+    }
+    .header{
+        order:-1;
+        position: fixed;
+                
+    }
+   .content-body{
+       order:0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       position: relative;
+       padding: 4em; 
+       width: 60%;
+       margin: 0px;
+       padding: 3em;
+       
+
+   }
+   .image{
+       order:3; 
+       width: 40%;
+       display: flex;
+       justify-self: center;
+   }
+   
+
+}
+
+@media (min-width:860px){
+
+   .content-body{ 
+       width: 80%; 
+       padding: 5em;
+       max-width: 700px;
+   }
+   /* .content-body h1,
+   .content-body p{
+       max-width: 500px;
+   } */
+   .image-desktop{ 
+       width: 80%;
+        object-fit: fill;
+   }
+}
